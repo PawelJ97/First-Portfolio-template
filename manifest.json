@@ -3,7 +3,7 @@
     "background_color": "#1818c9",
     "display": "browser",
     "scope": "/",
-    "start_url": "/https://github.com/PawelJ97/First-Portfolio-template.git",
+    "start_url": "//https://pawelj97.github.io/First-Portfolio-template-PWA/",
     "name": "First-Portfolio-template-PWA",
     "short_name": "PJPortfolio",
     "description": "PWA-Portfolio",
