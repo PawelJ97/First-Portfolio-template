@@ -305,7 +305,7 @@ p{
 #about .row p{
     text-align: center;
     letter-spacing: .0.6rem;
-    margin: 20px 0px 0;
+    margin: 20px 50px 0;
     padding-left: 20px;
     border-left:5px solid rgba(0, 5, 245, 0.834) ;
 }
@@ -390,7 +390,7 @@ p{
 #about .row .details ul li a{
     padding:0 10px ;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2rem;
     
 }
 #about .row .details ul li a:hover .fa{
@@ -428,31 +428,9 @@ p{
         color: rgba(0, 5, 245, 0.834);
     }
 }
-
-@media (max-width: 768px){
-    #about{
-        display: flex;
-        flex-direction: row ; /*domyslny układ poziomy*/
-        flex-wrap: wrap; /*zawijanie tekstu*/
-    }
-    #about .container{
-            width: 95%;
-            margin: 20px auto;
-        }
-        #about .row .column{
-            width: calc(100% - 200px);
-            margin-bottom: 20px;
-        }
-        #about .row p{
-            width: calc(100% - 100px)
-        }
-        
-    }
-
     @media (max-width: 992px){
         #about{
-            display: flex;
-            flex-direction: row ; /*domyslny układ poziomy*/
+            
             flex-wrap: wrap; /*zawijanie tekstu*/
         }
         #about .container{
@@ -460,11 +438,13 @@ p{
                 margin: 20px auto;
             }
             #about .row .column{
+                max-width: 350px;
+                min-width: 200px;
                 width: calc(100% - 200px);
                 margin-bottom: 20px;
             }
             #about .row p{
                 width: calc(100% - 100px)
             }
-            
         }
+            
