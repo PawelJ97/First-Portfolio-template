@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -23,17 +24,17 @@ img{
 }
 p{
     color: black;
-    font-size: 1.5rem;
-    margin-top: 10px;
-    line-height: 2.2rem;
-    font-weight: 400;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
     letter-spacing: 0.06rem;
 }
 .section-title{
     font-size: 4rem;
     font-weight: 300;
     color: black;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
@@ -41,6 +42,13 @@ p{
 /*color blue in title / need span in title*/
 .section-title span{
     color: rgba(0, 5, 245, 0.834);
+}
+.designation h1{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .1rem;
+    font-size: 3rem ;
+    text-transform: uppercase;
+    color: rgba(245, 245, 245, 0.687);
 }
 
 /*Hero Section*/
@@ -118,14 +126,14 @@ p{
 /*portfolio button*/
 #hero .cta{
     display: inline-block;
-    padding: 5px 20px; 
+    padding: 10px 30px; 
     color: rgba(225, 225, 225, 0.9);
     background-color: transparent;
-    border: 1px solid rgba(0,5,245,0.834);
+    border: 2px solid rgba(0,5,245,0.834);
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    margin-top: 10px;
+    margin-top: 20px;
     transition: .3s ease-out ;
 }
 /*lights up when you hover*/
@@ -164,7 +172,7 @@ p{
     background-image: url("./img/desk.jpg") ;
     background-size: cover;
     background-attachment: fixed;
-    margin: 10px 5% ;
+    margin: 10px 5%;
     position: relative; /* for contrast, index for caption*/
     z-index: 1;
     overflow: hidden; /* border-radius/ contrast - hidden contrast bg */
@@ -237,7 +245,7 @@ p{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(90deg, #60420eea 0%, #5b4821 100%);
+    background-image: linear-gradient(150deg, rgba(19,23,93,1) 0%, rgb(8, 16, 126) 100%);
     color:white;
 }
 #projects .project-info h1 {
@@ -265,7 +273,7 @@ p{
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(59, 51, 40, 0.748);
+    background-color: rgba(2, 39, 120, 0.604);
     opacity: 0.3;
 }
 #projects .project-img{
@@ -278,133 +286,127 @@ p{
 /*End Sample Porject*/
 
 /*About me section*/
-#about{
-    padding: 50px 0;
-    height: 100vh;
-    box-sizing: border-box;
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
 }
-#about .container{
-    width: 80%;
-    margin: 50px auto;
+#about .likeness{
+    width: 250px;
+    height: 360px;
+    box-shadow: 10px 30px 20px 0 rgba(6, 9, 160, 0.93);
 }
-
 #about .row{
-    position:relative ;
     width: 100%;
-    box-sizing:border-box ;
 }
 #about .row h1{
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 5px;
+}
+#about .row h2{
+    font-size: 2rem;
     font-weight: 500;
-    font-size: 4rem;
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
+    margin-bottom: 5px;
     text-transform: uppercase;
 }
 #about .row p{
-    text-align: center;
-    letter-spacing: .0.6rem;
-    margin: 20px 50px 0;
-    padding-left: 20px;
-    border-left:5px solid rgba(0, 5, 245, 0.834) ;
+    margin-bottom: 20px;
 }
-#about .row .column{
-    margin: 50px auto;
-    position: relative;
-    width: calc(25% - 20px);
-    min-height: 250px;
-    background: white;
-    align-items: center;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-#about .row .column::before{
-    content: "";
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    width:100% ;
-    height: 100%;
-    background: rgb(2, 5, 184);
-    z-index: 1;
-    transition: .5s;
-    mix-blend-mode:soft-light ;
-    opacity: .3;
-}
-#about .row .column:hover:before{
-    bottom: 0%;
-}
-#about .row .column .imgbox{
-    position: relative;
-}
-#about .row .column .imgbox img{
-    width: 100%;
-    transition: 3s;
-}
-#about .row .column:hover .imgbox img{
-    transform: scale(1.3);
-}
-#about .row .column .details{
-    position: absolute;
-    bottom: -86;
-    left: 0;
-    padding: 15px;
-    box-sizing: border-box;
-    background:rgba(0,0,0,.9);
-    width: 100%;
-    transition: .5s;
-    z-index: 2;
-}
-#about .row .column:hover .details{
-    bottom: 0;
-}
-#about .row .details h3{
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
-}
-#about .row .details h3 span{
-    margin: 0;
-    padding: 0;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: rgba(0, 5, 245, 0.834);
-    text-transform: uppercase;
-    position: relative;
-    top: -6px;
-}
-#about .row .details ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    float: right;
-}
-#about .row .details ul li{
-    list-style: none;
-}
-#about .row .details ul li a{
-    padding:0 10px ;
-    color: #fff;
-    font-size: 2rem;
-    
-}
-#about .row .details ul li a:hover .fa{
-    transform: rotateY(360deg);
-    color:rgba(0, 5, 245, 0.834);
-}
-#about .row .details ul li a .fa{
-    transition: .5s;
-}
-
-
 
 
 /*End About me section*/
+/* contact section*/
+ #contact .contact{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+#contact .contact-items{
+    width: 350px;
+}
+#contact .item{
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    box-shadow: 0px 0px 5px 0 rgba(7, 170, 246, 0.95);
+    transition: .3s ease box-shadow;
+}
+#contact .item:hover{
+    box-shadow: 0px 0px 25px 0 rgba(7, 170, 246, 0.95);
+}
+#contact .icon{
+    width: 80px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#contact .contact-info h1{
+    font-size: 3rem;
+    font-weight: 500px;
+    margin-bottom: 10px;
+    color: black;
+}
+#contact .contact-info h2{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500px;
+    color: black;
+}
+/*End contact section*/
+
+/*Footer section*/
+#footer{
+    background-image: linear-gradient(150deg, rgba(19,23,93,1) 0%, rgb(8, 16, 126) 100%);
+}
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+#footer h2{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .1rem;
+    font-size: 1.5rem ;
+    margin: 10px 10px;
+    color: rgba(245, 245, 245, 0.687);
+    }
+#footer .social-icon{
+    display: flex;
+    margin-bottom: 20px;
+}
+#footer .social-item{
+    height: 50px;
+    width: 200px;
+    margin: 0px 5px;
+    display: flex;
+    
+}
+#footer .social-item li{
+    list-style: none;
+}
+#footer .social-item li a{
+    padding: 0 10px;
+    color: rgba(245, 245, 245, 0.687);
+    font-size: 3.8rem;
+}
+#footer .social-item li a:hover .fa{
+    transform: rotateY(360deg);
+    color:rgba(7, 170, 246, 0.95);
+}
+#footer .social-item li a .fa{
+    transition: .3s;
+}
+
+/*End Footer section*/
 
 /*Animation (blue animation my name*/
 /*transition*/
@@ -428,23 +430,19 @@ p{
         color: rgba(0, 5, 245, 0.834);
     }
 }
-    @media (max-width: 992px){
-        #about{
+   /* @media (max-width: 992px){
+        #about .about{
             
-            flex-wrap: wrap; /*zawijanie tekstu*/
+            flex-wrap: wrap; /*zawijanie tekstu
         }
-        #about .container{
+        #about .about .container{
                 width: 90%;
                 margin: 20px auto;
             }
-            #about .row .column{
-                max-width: 350px;
-                min-width: 200px;
-                width: calc(100% - 200px);
-                margin-bottom: 20px;
+            #about .about .row p{
+                width: calc(100% - 100px);
+                padding-left: 20px;
+                padding-right: 20px;
             }
-            #about .row p{
-                width: calc(100% - 100px)
-            }
-        }
+        }*/
             
