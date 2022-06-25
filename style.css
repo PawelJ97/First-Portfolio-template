@@ -41,7 +41,7 @@ p{
 }
 /*color blue in title / need span in title*/
 .section-title span{
-    color: rgba(0, 5, 245, 0.834);
+    color: rgb(11, 24, 207);
 }
 .designation h1{
     font-family: 'Raleway', sans-serif;
@@ -55,7 +55,7 @@ p{
 
 /*Bg photo and center*/
 #hero{
-    background-image: url(./img/onebg.jpg);
+    background-image: url(./img/bgg.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -109,7 +109,7 @@ p{
     left: 0;
     height: 100%;
     width: 0;
-    background-color: rgb(1, 4, 209);
+    background-color: rgb(8, 16, 126);
     animation: text_reveal_box 1s ease; /*using transition*/
     animation-delay: 1s;
 }
@@ -129,7 +129,7 @@ p{
     padding: 10px 30px; 
     color: rgba(225, 225, 225, 0.9);
     background-color: transparent;
-    border: 2px solid rgba(0,5,245,0.834);
+    border: 2px solid rgb(8, 16, 126);
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -139,7 +139,7 @@ p{
 /*lights up when you hover*/
 #hero .cta:hover{
     color: rgba(255, 255, 255, 0.9);
-    background-color: rgba(0, 5, 245, 0.834);
+    background-color: rgba(8, 16, 126, 0.828);
 }
 /*End Hero Section*/
 
@@ -190,8 +190,8 @@ p{
     z-index: -1;
 }
 #services .service-bottom .icon{
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
     margin-bottom: 80px;
 }
 #services .service-bottom .icon img{
@@ -296,7 +296,7 @@ p{
 #about .likeness{
     width: 250px;
     height: 360px;
-    box-shadow: 10px 30px 20px 0 rgba(6, 9, 160, 0.93);
+    box-shadow: 10px 30px 20px 0 rgb(8, 16, 126);
 }
 #about .row{
     width: 100%;
@@ -337,11 +337,11 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction:column;
-    box-shadow: 0px 0px 5px 0 rgba(7, 170, 246, 0.95);
+    box-shadow: 0px 0px 5px 0 rgb(8, 16, 126);
     transition: .3s ease box-shadow;
 }
 #contact .item:hover{
-    box-shadow: 0px 0px 25px 0 rgba(7, 170, 246, 0.95);
+    box-shadow: 0px 0px 25px 0 rgb(8, 16, 126);
 }
 #contact .icon{
     width: 80px;
@@ -427,7 +427,7 @@ p{
 }
 @keyframes text_reveal_name{
     100%{
-        color: rgba(0, 5, 245, 0.834);
+        color: rgb(7, 17, 162);
     }
 }
    /* @media (max-width: 992px){
