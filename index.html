@@ -1,7 +1,3 @@
-<!-- cta = call to action-->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +9,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel='stylesheet' href='style.css'>
     <link rel="manifest" href="manifest.json">
-    <title>My website</title>
+    <title>PJPortfolio</title>
 </head>
 <body>
+    <!--HEADER SECTION-->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero"><h1 class="section-title"><span>Jamiński</span> Paweł</h1></a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger"><div class="bar"></div></div>
+                    <ul>
+                        <li><a href="#" data-after="Home">Home</a></li>
+                        <li><a href="#" data-after="Services">Services</a></li>
+                        <li><a href="#" data-after="Sample">Sample</a></li>
+                        <li><a href="#" data-after="About">About</a></li>
+                        <li><a href="#" data-after="Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END HEADER SECTION-->
+
     <!--HERO SECTION-->
 <Section id='hero' >
     <div class="hero container">
@@ -199,7 +217,6 @@
                 <div class="contact-info">
                     <h1>Address</h1>
                     <h2>somewhere over the rainbow</h2>
-                    <h2>somewhere in time</h2>
                 </div>
             </div>
         </div>
@@ -223,7 +240,7 @@
     </div>
 </section>
 <!--End Footer section-->
-
-<script src="sw.js"></script>
+<script src="./JS/app.js"></script>
+<script src="./JS/sw.js"></script>
 </body>
 </html>
