@@ -140,6 +140,7 @@ p{
     cursor: pointer;
     transform:scale(.8);
     margin-right: 20px;
+    margin-bottom: 5px;
 }
 #header .hamburger::after{
     position: absolute;
@@ -148,7 +149,7 @@ p{
     width: 100%;
     border-radius: 50%;
     border: 3px solid rgb(11, 24, 207);
-    animation: hamburger_puls 1.5s ease infinite;
+    animation: hamburger_puls 1.6s ease infinite;
 }
 #header .hamburger .bar{
     height: 2px;
@@ -272,9 +273,12 @@ p{
 }
 /*lights up when you hover*/
 #hero .cta:hover{
-    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 0.2rem;
+    color: rgba(255, 255, 255, 0.779);
     background-color: rgba(8, 16, 126, 0.828);
+    box-shadow: 0 0 15px;
 }
+
 /*End Hero Section*/
 
 
@@ -541,7 +545,7 @@ p{
 }
 #footer .social-item li a:hover .fa{
     transform: rotateY(360deg);
-    color:rgba(7, 170, 246, 0.95);
+    color:rgb(249, 249, 251);
 }
 #footer .social-item li a .fa{
     transition: .3s;
